@@ -1,0 +1,262 @@
+//*  SECTIONS 
+//*===========================================
+
+#container {
+	margin-top: 60px;
+}
+
+// .sct[pageAbbrev]__xxx {} 
+
+
+//*  CONTENT 
+//*===========================================
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+//*  HOME -- Hero 
+//*===========================================
+
+.hero {
+	background: $gr-3;
+	min-height: 100px;
+}
+
+.hero__bckgrndImg {
+	@include flx-p(
+		row,
+		wrap,
+		center,
+		center,
+		space-between
+	)
+	max-width: $mxw;
+	margin: 0 auto;
+	height: 48.4722222vw;
+	position: relative;
+	max-height: 552px;
+	z-index: 500;
+	.hero__caption {
+		align-self: baseline;
+		@include trans(all, 0.3s, ease);
+		@media all and (min-width:375px) {
+			margin: 0 auto $space auto;
+			max-width: $mxw;
+		}
+	}
+}
+
+.hero__carousel {
+	position: absolute;
+	margin: 0 auto;
+	max-width: $mxw;
+	top: 60px;
+}
+
+.hero--instock {
+	padding: $space-2x $space;
+	top: 64px;
+}
+
+//*  HOME -- Hero Nav
+//*===========================================
+
+.heroNav {
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.heroNav__sctn {
+	background-color: $cl-1;
+	min-height: 76px;
+	@include flx-p(
+		column,
+		nowrap,
+		center,
+		center,
+		center
+	)
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-1) {
+		min-height: 100px;
+	}
+	@media all and (min-width:$bp-3) {
+		min-height: 200px;
+	}
+}
+
+.heroNav__sctn--01 {
+	background: url('../img/fpo__heroLink_01.jpg') center center/cover no-repeat;
+}
+.heroNav__sctn--02 {
+	background: url('../img/fpo__heroLink_02.jpg') center center/cover no-repeat;
+}
+.heroNav__sctn--03 {
+	background: url('../img/fpo__heroLink_03.jpg') center center/cover no-repeat;
+}
+.heroNav__sctn--04 {
+	background: url('../img/fpo__heroLink_04.jpg') center center/cover no-repeat;
+}
+
+//*  FEATURE BLOCKS
+//*===========================================
+
+.blocFeat {
+	padding: $space-2x $space $space $space;
+	width: 100%;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		padding: $space 0 $space-2x 0;
+	}
+}
+
+.blocFeat--alt {
+	background-color: $gr-3;
+	padding: $space;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		padding: $space-half;
+	}
+}
+
+.blocFeat__cntnt:nth-child(1) {
+	margin-bottom: $space-2x;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		margin-bottom: 0; 
+	}
+}
+
+.blocFeat__img {
+	margin-bottom: $space;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		margin-bottom: 0; 
+	}
+}
+
+.blocFeat--full {
+	padding: 0;
+	.blocFeat__cntnt {
+		padding: 0 $space $space $space;
+		margin-bottom: $space-2x;
+		@include trans(all, 0.3s, ease);
+		@media all and (min-width:$bp-3) {
+			padding: $space-2x $space $space-3x $space;
+			margin: 0 auto;
+			max-width: 900px;
+		}
+	}
+}
+
+//*  PRODUCT PAGES
+//*===========================================
+
+.fixHeight {
+	position: relative;
+	padding-bottom: 49.8571429%;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+	div { 
+	  position: absolute; 
+	  top: 0; 
+	  left: 0; 
+	  width: 100%; 
+	  height: 100%;
+	}
+}
+
+.heroContent {
+	padding: $space-half;
+}
+
+.blocUsps {
+	background-color: $gr-3;
+	padding: $space;
+}
+
+.bloc__singleUsp {
+	margin-bottom: $space;
+	&:last-child { margin-bottom: 0; }
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-4) {
+		padding: $space-2x;
+	}
+}
+
+.blocGall {
+	padding: $space-2x $space;
+}
+
+.blocGall__list {
+	@include flx-p(
+		row,
+		wrap,
+		flex-start,
+		flex-start,
+		flex-start
+	)
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		justify-content: space-between;
+	}
+}
+
+.blocGall__item {
+	list-style-type: none;
+	margin-bottom: $space;
+	width: 100%;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		width: 48.5%; 
+	}
+	@media all and (min-width:$bp-5) {
+		width: 23.5%;
+	}
+}
+
+.blocCta {
+	border-top: 1px solid $gr-4;
+	border-bottom: 1px solid $gr-4;
+	padding: $space-2x;
+	margin: $space;
+	width: calc(100% - 2em);
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		justify-content: center;
+	}
+}
+
+.blocSpecs {
+	padding: $space $space $space-4x $space;
+}
+
+//*  In-Stock Pages
+//*===========================================
+
+.inStock {
+	padding: $space $space-half;
+}
+
+.inStock__item {
+	@include flx-p(
+		row,
+		wrap,
+		flex-start,
+		flex-start,
+		flex-start
+	)
+	background-color: $gr-4;
+	padding: $space;
+	div {
+		margin-bottom: $space-2x;
+	}
+	.img--stock {
+		margin-bottom: $space;
+	}
+}
