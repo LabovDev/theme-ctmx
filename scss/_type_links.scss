@@ -46,18 +46,18 @@ h6 { font-size: 100%; }
 .hdln--hero {
 	color: $w;
 	font-family: $fnt-3;
-	font-size: 130%;
+	font-size: 6vw;
 	line-height: 1;
 	text-align: center;
 	text-shadow: $txt-drop;
-	margin: $space auto 0 auto;
+	margin: 0 auto $space-qrtr auto;
 	@include trans(all, 0.3s, ease);
-	@media all and (min-width:375px) {
-		font-size: 3vw;
-	}
 	@media all and (min-width:$bp-3) {
-		font-size: 140%;
-		margin: $space-and-half auto 0 auto;
+		font-size: 250%;
+		margin: 0 auto;
+	}
+	@media all and (min-width:$bp-6) {
+		font-size: 300%;
 	}
 }
 
@@ -75,18 +75,17 @@ h6 { font-size: 100%; }
 
 .hdln--heroSub {
 	color: $w;
-	font-size: 70%;
+	font-size: 3vw;
+	flex-grow: 1;
+	line-height: 1; 
 	text-align: center;
 	text-shadow: $txt-drop;
 	@include trans(all, 0.3s, ease);
-	@media all and (min-width:375px) {
-		font-size: 3vw;
-	}
 	@media all and (min-width:$bp-3) {
 		font-size: 2.5vw;
 	}
 	@media all and (min-width:$bp-4) {
-		font-size: 110%;
+		font-size: 120%;
 	}
 }
 
@@ -190,21 +189,24 @@ h6 { font-size: 100%; }
 
 .txt--hero {
 	color: $w;
-	font-size: 70%;
+	font-size: 3vw;
+	font-weight: 700;
 	line-height: 1.2;
+	padding-top: $space;
 	text-align: center;
 	text-shadow: $txt-drop;
-	margin: $space-qrtr $space $space $space;
+	// margin: $space-qrtr $space $space $space;
 	align-self: baseline;
 	@include trans(all, 0.3s, ease);
-	@media all and (min-width:375px) {
-		font-size: 2.25vw;
+	@media all and (min-width:$bp-1) {
+		font-size: 2.5vw;
 	}
 	@media all and (min-width:$bp-3) {
-		font-size: 1.75vw;
+		font-size: 2vw;
+		font-weight: 400;
 	}
-	@media all and (min-width:$bp-4) {
-		font-size: 70%;
+	@media all and (min-width:$bp-5) {
+		font-size: 90%;
 		margin: 0 auto;
 		max-width: 800px;
 	}
@@ -348,7 +350,7 @@ h6 { font-size: 100%; }
 	text-decoration: none;
 }
 
-.heroNav__link {
+.link--heroNav {
 	color: $w;
 	font: normal normal 100%/1 $fnt-2;
 	letter-spacing: .05em;
@@ -397,6 +399,18 @@ h6 { font-size: 100%; }
     color: $cl-2;
     transform: scale(1.05);
   }
+}
+
+.btn--ms {
+	margin: $space auto 0 auto;
+	font-size: 55%;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-1) {
+		font-size: 65%;
+	}
+	@media all and (min-width:$bp-3) {
+		font-size: 75%;
+	}
 }
 
 .btn--dark {

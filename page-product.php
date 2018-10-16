@@ -9,7 +9,7 @@ get_header(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 		<header>
-			<div class="bloc fixHeight" style="background: url('<?php bloginfo('url'); ?>/wp-content/themes/ctmx/img/fpo__hero_02.jpg') top center/contain no-repeat;">
+			<div class="bloc fixHeight" style="background: url('<?php bloginfo('url'); ?>/wp-content/themes/theme-ctmx/img/fpo__hero_02.jpg') top center/contain no-repeat;">
 				<div>
 					<h1 class="hdln hdln--prdName"><?php the_field('prd_name'); ?></h1>
 				</div>

@@ -9,7 +9,7 @@ get_header(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header >
 			<div class="bloc hero">
-				<div class="hero__bckgrndImg">
+<!-- 				<div class="hero__bckgrndImg">
 					<h1 class="hdln hdln--hero">Manufacturing <span class="hdln--heroBig">Mettle</span></h1>
 					<div class="hero__caption">
 						<h2 class="hdln hdln--heroSub">Committed to you. Committed to the future.</h2>
@@ -23,10 +23,10 @@ get_header(); ?>
 		</header>
 			
 			<section class="wrap heroNav">
-				<section class="bloc--50 heroNav__sctn heroNav__sctn--01"><a class="heroNav__link" href="###">About</a></section>
-				<section class="bloc--50 heroNav__sctn heroNav__sctn--02"><a class="heroNav__link" href="###">Products</a></section>
-				<section class="bloc--50 heroNav__sctn heroNav__sctn--03"><a class="heroNav__link" href="###">In-Stock Inventory</a></section>
-				<section class="bloc--50 heroNav__sctn heroNav__sctn--04"><a class="heroNav__link" href="###">Service &amp; Parts</a></section>
+				<section class="bloc--50 heroNav__sctn heroNav__sctn--01"><a class="link link--heroNav" href="###">About</a></section>
+				<section class="bloc--50 heroNav__sctn heroNav__sctn--02"><a class="link link--heroNav" href="###">Products</a></section>
+				<section class="bloc--50 heroNav__sctn heroNav__sctn--03"><a class="link link--heroNav" href="###">In-Stock Inventory</a></section>
+				<section class="bloc--50 heroNav__sctn heroNav__sctn--04"><a class="link link--heroNav" href="###">Service &amp; Parts</a></section>
 			</section> <!-- END .heroNav -->
 			
 			<section class="wrap blocFeat">
@@ -37,13 +37,13 @@ get_header(); ?>
 					<a href="###" class="btn">Learn More</a>
 				</div>
 				<div class="bloc--50 blocFeat__img">
-					<img src="<?php bloginfo('url'); ?>/wp-content/themes/ctmx/img/fpo_feat_01.jpg" alt="fpo_feat_01" width="800" height="600" />
+					<img src="<?php bloginfo('url'); ?>/wp-content/themes/theme-ctmx/img/fpo_feat_01.jpg" alt="fpo_feat_01" width="800" height="600" />
 				</div>
 			</section> <!-- END .blocFeatSplit -->
 			
 			<section class="wrap blocFeat blocFeat--alt">
 				<div class="bloc--50 blocFeat__img">
-					<img src="<?php bloginfo('url'); ?>/wp-content/themes/ctmx/img/fpo_feat_02.jpg" alt="fpo_feat_02" width="800" height="600" />
+					<img src="<?php bloginfo('url'); ?>/wp-content/themes/theme-ctmx/img/fpo_feat_02.jpg" alt="fpo_feat_02" width="800" height="600" />
 				</div>
 				<div class="bloc--50 blocFeat__cntnt">
 					<h1 class="hdln hdln--feat">The headline will go here and look like this.</h1>
@@ -55,7 +55,7 @@ get_header(); ?>
 			
 			<section class="wrap blocFeat blocFeat--full">
 				<div class="bloc--100 blocFeat__img">
-					<img src="<?php bloginfo('url'); ?>/wp-content/themes/ctmx/img/fpo_feat_full_01.jpg" alt="fpo_feat_full_01" width="1440" height="500" />
+					<img src="<?php bloginfo('url'); ?>/wp-content/themes/theme-ctmx/img/fpo_feat_full_01.jpg" alt="fpo_feat_full_01" width="1440" height="500" />
 				</div>
 				<div class="bloc--100 blocFeat__cntnt">
 					<h1 class="hdln hdln--feat  hdln--featFull">The headline will go here and look like this.</h1>
