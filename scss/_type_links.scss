@@ -134,7 +134,7 @@ h6 { font-size: 100%; }
 	}
 }
 
-.hdln--prdtag {
+.hdln--prdMain {
 	margin-bottom: $space-half;
 	text-align: center;
 	@include trans(all, 0.3s, ease);
@@ -143,7 +143,7 @@ h6 { font-size: 100%; }
 	}
 }
 
-.hdln--prdDesc {
+.hdln--prdSub {
 	background-color: $k;
 	color: $w;
 	font-size: 80%;
@@ -212,7 +212,13 @@ h6 { font-size: 100%; }
 	}
 }
 
-.txt--feat {
+.txt--prdHero {
+	font-size: 100%; 
+	text-align: center;
+}
+
+.blocFeat__cntnt p,
+.blocFeat__more p {
 	margin-bottom: $space;
 	@include trans(all, 0.3s, ease);
 	@media all and (min-width:$bp-3) {

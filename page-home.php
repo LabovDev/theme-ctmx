@@ -9,13 +9,6 @@ get_header(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header >
 			<div class="bloc hero">
-<!-- 				<div class="hero__bckgrndImg">
-					<h1 class="hdln hdln--hero">Manufacturing <span class="hdln--heroBig">Mettle</span></h1>
-					<div class="hero__caption">
-						<h2 class="hdln hdln--heroSub">Committed to you. Committed to the future.</h2>
-						<p class="txt txt--hero">As a dynamic and agile company, led by experienced operators in the mixer industry, Continental continues to invest in its facilities, product, processes and people. Taken together, these investments underscore the company&rsquo;s commitment to serve its customers.</p>
-					</div>
-				</div> <!-- END .hero__cntnt -->
 				<div class="hero__carousel">
 					<?php echo do_shortcode('[metaslider id="50"]'); ?>
 				</div> <!-- END .hero__carousel -->
@@ -31,38 +24,65 @@ get_header(); ?>
 			
 			<section class="wrap blocFeat">
 				<div class="bloc--50 blocFeat__cntnt">
-					<h1 class="hdln hdln--feat">The headline will go here and look like this.</h1>
-					<h2 class="hdln hdln--featSub">The sub-headline will go here and look like this.</h2>
-					<p class="txt txt--feat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam metus sapien, aliquam eget odio et, vestibulum hendrerit turpis. In sit amet porta turpis, quis varius metus. Sed ac suscipit neque, sit amet tincidunt dolor.</p>
-					<a href="###" class="btn">Learn More</a>
+					<h1 class="hdln hdln--feat"><?php the_field('feat_head_01'); ?></h1>
+					<h2 class="hdln hdln--featSub"><?php the_field('feat_sub_head_01'); ?></h2>
+					<?php the_field('feat_txt_01'); ?>
+					<a href="##" class="btn" id="feat1">Learn More</a>
 				</div>
 				<div class="bloc--50 blocFeat__img">
-					<img src="<?php bloginfo('url'); ?>/wp-content/themes/theme-ctmx/img/fpo_feat_01.jpg" alt="fpo_feat_01" width="800" height="600" />
+					<?php 
+						$image = get_field('feat_img_01');
+						if( !empty($image) ): ?>
+							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+						<?php endif; ?>
 				</div>
+				<div id="featMore-01">
+					<div class="bloc--100 blocFeat__more">
+						<?php the_field('feat_txt_01_more'); ?>
+					</div>
+				</div>				
 			</section> <!-- END .blocFeatSplit -->
 			
 			<section class="wrap blocFeat blocFeat--alt">
 				<div class="bloc--50 blocFeat__img">
-					<img src="<?php bloginfo('url'); ?>/wp-content/themes/theme-ctmx/img/fpo_feat_02.jpg" alt="fpo_feat_02" width="800" height="600" />
+					<?php 
+						$image = get_field('feat_img_02');
+						if( !empty($image) ): ?>
+							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+					<?php endif; ?>
 				</div>
 				<div class="bloc--50 blocFeat__cntnt">
-					<h1 class="hdln hdln--feat">The headline will go here and look like this.</h1>
-					<h2 class="hdln hdln--featSub">The sub-headline will go here and look like this.</h2>
-					<p class="txt txt--feat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam metus sapien, aliquam eget odio et, vestibulum hendrerit turpis. In sit amet porta turpis, quis varius metus. Sed ac suscipit neque, sit amet tincidunt dolor.</p>
-					<a href="###" class="btn">Learn More</a>
+					<h1 class="hdln hdln--feat"><?php the_field('feat_head_02'); ?></h1>
+					<h2 class="hdln hdln--featSub"><?php the_field('feat_sub_head_02'); ?></h2>
+					<?php the_field('feat_txt_03'); ?>
+					<a href="##" class="btn" id="feat2">Learn More</a>
 				</div>
+				<div id="featMore-02">
+					<div class="bloc--100 blocFeat__more">
+						<?php the_field('feat_txt_02_more'); ?>
+					</div>
+				</div>					
 			</section> <!-- END .blocFeatSplit -->
 			
 			<section class="wrap blocFeat blocFeat--full">
 				<div class="bloc--100 blocFeat__img">
-					<img src="<?php bloginfo('url'); ?>/wp-content/themes/theme-ctmx/img/fpo_feat_full_01.jpg" alt="fpo_feat_full_01" width="1440" height="500" />
+					<?php 
+						$image = get_field('feat_img_03');
+						if( !empty($image) ): ?>
+							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+					<?php endif; ?>
 				</div>
 				<div class="bloc--100 blocFeat__cntnt">
-					<h1 class="hdln hdln--feat  hdln--featFull">The headline will go here and look like this.</h1>
-					<h2 class="hdln hdln--featSub hdln--featSubFull">The sub-headline will go here and look like this.</h2>
-					<p class="txt txt--feat txt--featFull">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam metus sapien, aliquam eget odio et, vestibulum hendrerit turpis. In sit amet porta turpis, quis varius metus. Sed ac suscipit neque, sit amet tincidunt dolor.</p>
-					<a href="###" class="btn">Learn More</a>					
+					<h1 class="hdln hdln--feat  hdln--featFull"><?php the_field('feat_head_03'); ?></h1>
+					<h2 class="hdln hdln--featSub hdln--featSubFull"><?php the_field('feat_sub_head_03'); ?></h2>
+					<p class="txt txt--feat txt--featFull"><?php the_field('feat_txt_03'); ?></p>
+					<a href="##" class="btn" id="feat3">Learn More</a>					
 				</div>
+				<div id="featMore-03">
+					<div class="bloc--100 blocFeat__more">
+						<?php the_field('feat_txt_03_more'); ?>
+					</div>
+				</div>	
 			</section>
 			
 		</div> <!-- END .wrap--mxw -->

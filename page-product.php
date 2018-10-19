@@ -9,15 +9,15 @@ get_header(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 		<header>
-			<div class="bloc fixHeight" style="background: url('<?php bloginfo('url'); ?>/wp-content/themes/theme-ctmx/img/fpo__hero_02.jpg') top center/contain no-repeat;">
+			<div class="bloc fixHeight" style="background: url('<?php the_field('prd_hero_img'); ?>') top center/contain no-repeat;">
 				<div>
 					<h1 class="hdln hdln--prdName"><?php the_field('prd_name'); ?></h1>
 				</div>
 			</div> <!-- END .heroImg -->
 			<div class="heroContent">
-				<h2 class="hdln hdln--prdtag"><?php the_field('prd_tag'); ?></h2>
-				<h3 class="hdln hdln--prdDesc"><?php the_field('prd_desc'); ?></h3>
-				<p class="txt txt--heroGen"><?php the_field('prd_desc_ext'); ?></p>
+				<h2 class="hdln hdln--prdMain"><?php the_field('prd_hero_hdln'); ?></h2>
+				<h3 class="hdln hdln--prdSub"><?php the_field('prd_hero_sub_hdln'); ?></h3>
+				<p class="txt txt--prdHero"><?php the_field('prd_hero_desc_txt'); ?></p>
 			</div> <!-- END .heroContent -->
 		</header>
 		
@@ -26,12 +26,18 @@ get_header(); ?>
 				<h1 class="hdln hdln--feat"><?php the_field('prd_over_hdln'); ?></h1>
 				<h2 class="hdln hdln--featSub"><?php the_field('prd_over_hdln_sub'); ?></h2>
 				<p class="txt txt--feat"><?php the_field('prd_over_txt'); ?></p>
+				<a href="##" class="btn" id="overMoreBtn">Learn More</a>
 			</div>
 			<div class="bloc--50 blocFeat__img">
 				<?php $image = get_field('prd_over_img');
 					if( !empty($image) ): ?>
 					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 				<?php endif; ?>
+			</div>
+			<div id="overMore">
+				<div class="bloc--100 blocFeat__more">
+					<?php the_field('prd_over_txt_more'); ?>
+				</div>
 			</div>
 		</section> <!-- END .blocFeat -->
 		
