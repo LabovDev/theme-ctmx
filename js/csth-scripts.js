@@ -11,4 +11,13 @@ $(document).ready(function(){
     $("#overMoreBtn").click(function(){
         $("#overMore").toggle(300);
     });
+    $("#abt1").click(function(){
+        $("#abtMore-01").toggle(300);
+    });
+    $("#abt2").click(function(){
+        $("#abtMore-02").toggle(300);
+    });
+    $("#abt3").click(function(){
+        $("#abtMore-03").toggle(300);
+    });
 });

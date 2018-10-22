@@ -154,7 +154,8 @@ img {
 
 .blocFeat--full {
 	padding: 0;
-	.blocFeat__cntnt {
+	.blocFeat__cntnt,
+	.blocAbt__cntnt {
 		padding: 0 $space $space $space;
 		margin-bottom: $space-2x;
 		@include trans(all, 0.3s, ease);
@@ -164,12 +165,19 @@ img {
 			max-width: 900px;
 		}
 	}
+	.blocAbt__cntnt {
+		padding: 0 $space;
+		margin-bottom: 0; 
+	}
 }
 
 #featMore-01, 
 #featMore-02,
 #featMore-03,
-#overMore { 
+#overMore,
+#abtMore-01,
+#abtMore-02,
+#abtMore-03 { 
 	display:none;
 	min-width: 100%;
 
@@ -179,6 +187,12 @@ img {
 .blocFeat__more {
 	padding: $space $space 0 $space;
 	margin: 0 auto;
+	max-width: 900px;
+}
+
+.blocAbt__more {
+	margin: 0 auto $space-2x auto;
+	padding: $space $space 0 $space;
 	max-width: 900px;
 }
 
@@ -289,4 +303,19 @@ img {
 	.img--stock {
 		margin-bottom: $space;
 	}
+}
+
+//* ABOUT US
+//*===========================================
+
+.hero--about {
+	@include flx-p(
+		column,
+		nowrap,
+		flex-end,
+		center,
+		center
+	)
+	height: 60vh;
+	padding-bottom: $space;
 }

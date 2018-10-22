@@ -204,11 +204,13 @@ h6 { font-size: 100%; }
 	@media all and (min-width:$bp-3) {
 		font-size: 2vw;
 		font-weight: 400;
+		padding: 0 $space-half;
 	}
 	@media all and (min-width:$bp-5) {
 		font-size: 90%;
 		margin: 0 auto;
 		max-width: 800px;
+		padding: 0;
 	}
 }
 
@@ -218,11 +220,25 @@ h6 { font-size: 100%; }
 }
 
 .blocFeat__cntnt p,
-.blocFeat__more p {
+.blocFeat__more p,
+.blocAbt__more p {
+	font-size: 100%;
 	margin-bottom: $space;
 	@include trans(all, 0.3s, ease);
 	@media all and (min-width:$bp-3) {
 		font-size: 80%;
+	}
+}
+
+.txt--abtLead {
+	font-size: 4vw;
+	font-weight: 700;
+	line-height: 2;
+	margin: $space 0;
+	text-align: center;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-1) {
+		font-size: 2.5vw;
 	}
 }
 

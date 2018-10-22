@@ -16,10 +16,10 @@ get_header(); ?>
 		</header>
 			
 			<section class="wrap heroNav">
-				<section class="bloc--50 heroNav__sctn heroNav__sctn--01"><a class="link link--heroNav" href="###">About</a></section>
-				<section class="bloc--50 heroNav__sctn heroNav__sctn--02"><a class="link link--heroNav" href="###">Products</a></section>
-				<section class="bloc--50 heroNav__sctn heroNav__sctn--03"><a class="link link--heroNav" href="###">In-Stock Inventory</a></section>
-				<section class="bloc--50 heroNav__sctn heroNav__sctn--04"><a class="link link--heroNav" href="###">Service &amp; Parts</a></section>
+				<section class="bloc--50 heroNav__sctn heroNav__sctn--01"><a class="link link--heroNav" href="<?php bloginfo('url'); ?>/?page_id=18">About</a></section>
+				<section class="bloc--50 heroNav__sctn heroNav__sctn--02"><a class="link link--heroNav" href="<?php bloginfo('url'); ?>/?page_id=10">Products</a></section>
+				<section class="bloc--50 heroNav__sctn heroNav__sctn--03"><a class="link link--heroNav" href="<?php bloginfo('url'); ?>/?page_id=16">Contact</a></section>
+				<section class="bloc--50 heroNav__sctn heroNav__sctn--04"><a class="link link--heroNav" href="<?php bloginfo('url'); ?>/?page_id=14">Parts &amp; Service</a></section>
 			</section> <!-- END .heroNav -->
 			
 			<section class="wrap blocFeat">
