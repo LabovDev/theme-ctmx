@@ -71,6 +71,7 @@
       font: normal normal 120%/1 $fnt-2;
       padding: $space;
       text-decoration: none;
+      &:hover { color: $w; }
     }
     &:hover { background-color: $cl-2; }
   }
@@ -90,6 +91,10 @@
 	width: 100vw;
 }
 
+@media all and (min-width:$bp-6) {
+  #menu:target > ul li ul { display: block; }
+}
+
 #menu li ul { 
   position: static;
 }
@@ -103,5 +108,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  li a { margin-left: $space; }
+  li a { 
+    font-size: 90%;
+    margin-left: $space;
+    padding: $space-half;
+  }
 }

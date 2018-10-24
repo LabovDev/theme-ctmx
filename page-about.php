@@ -4,7 +4,7 @@
 
 get_header(); ?>
 
-<section id="content" class="wrap wrap--mxw" role="main">
+<section id="content" class="wrap" role="main">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -16,8 +16,8 @@ get_header(); ?>
 			</div> <!-- END .hero -->
 		</header>
 
-		<section class="wrap blocFeat blocFeat--full">
-			<div class="bloc--100 blocFeat__cntnt">
+		<section class="wrap blocFeat blocAbt--full">
+			<div class="bloc">
 				<p class="txt txt--abtLead"><?php the_field('abt_lead_txt'); ?></p>
 			</div>
 		</section>
@@ -27,41 +27,41 @@ get_header(); ?>
 				<h1 class="hdln hdln--feat"><?php the_field('abt_pnlhead_01'); ?></h1>
 				<h2 class="hdln hdln--featSub"><?php the_field('abt_pnlsub_head_01'); ?></h2>					
 				<p><?php the_field('abt_pnltxt_01'); ?></p>
-				<a href="##" class="btn" id="abt1">More</a>
+				<a href="##" class="btn btn--dark" id="abt1">More</a>
+				<div id="abtMore-01">
+					<div class="bloc blocFeat__more">
+						<p><?php the_field('abt_pnltxt_01_more'); ?></p>
+					</div>
+				</div>		
 			</div>
-			<div class="bloc--50 blocFeat__img">
+			<div class="bloc--50 blocAbt__img">
 				<?php 
 					$image = get_field('abt_img_01');
 					if( !empty($image) ): ?>
 						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 				<?php endif; ?>				
-			</div>
-			<div id="abtMore-01">
-				<div class="bloc--100 blocFeat__more">
-					<p><?php the_field('abt_pnltxt_01_more'); ?></p>
-				</div>
-			</div>				
+			</div>		
 		</section> <!-- END .blocFeatSplit -->
 		
 		<section class="wrap blocFeat blocFeat--full">
-			<div class="bloc--100 blocFeat__img">
+			<div class="bloc blocFeat__img">
 				<?php 
 					$image = get_field('abt_img_02');
 					if( !empty($image) ): ?>
 						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 				<?php endif; ?>
 			</div>
-			<div class="bloc--100 blocFeat__cntnt blocAbt__cntnt">
+			<div class="bloc blocAbt__cntnt">
 				<h1 class="hdln hdln--feat hdln--featFull"><?php the_field('abt_pnlhead_02'); ?></h1>
 				<h2 class="hdln hdln--featSub hdln--featSubFull"><?php the_field('abt_pnlsub_head_02'); ?></h2>
 				<p class="txt txt--feat txt--featFull"><?php the_field('abt_pnltxt_02'); ?></p>
-				<a href="##" class="btn" id="abt2">More</a>					
+				<a href="##" class="btn btn--dark" id="abt2">More</a>					
+				<div id="abtMore-02">
+					<div class="bloc blocAbt__more">
+						<p><?php the_field('abt_pnltxt_02_more'); ?></p>
+					</div>
+				</div>	
 			</div>
-			<div id="abtMore-02">
-				<div class="bloc--100 blocAbt__more">
-					<p><?php the_field('abt_pnltxt_02_more'); ?></p>
-				</div>
-			</div>	
 		</section>
 
 		<section class="wrap blocFeat--alt">
@@ -69,20 +69,20 @@ get_header(); ?>
 				<h1 class="hdln hdln--feat"><?php the_field('abt_pnlhead_03'); ?></h1>
 				<h2 class="hdln hdln--featSub"><?php the_field('abt_pnlsub_head_03'); ?></h2>					
 				<p><?php the_field('abt_pnltxt_03'); ?></p>
-				<a href="##" class="btn" id="abt3">More</a>
+				<a href="##" class="btn btn--dark" id="abt3">More</a>
+				<div id="abtMore-03">
+					<div class="bloc blocAbt__more">
+						<p><?php the_field('abt_pnltxt_03_more'); ?></p>
+					</div>
+				</div>	
 			</div>
-			<div class="bloc--50 blocFeat__img">
+			<div class="bloc--50">
 				<?php 
 					$image = get_field('abt_img_03');
 					if( !empty($image) ): ?>
 						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 				<?php endif; ?>				
-			</div>
-			<div id="abtMore-03">
-				<div class="bloc--100 blocFeat__more">
-					<p><?php the_field('abt_pnltxt_03_more'); ?></p>
-				</div>
-			</div>				
+			</div>			
 		</section> <!-- END .blocFeatSplit -->
 			
 		</div> <!-- END .wrap--mxw -->

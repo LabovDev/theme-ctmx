@@ -4,7 +4,7 @@
 
 get_header(); ?>
 
-<section id="content" class="wrap wrap--mxw" role="main">
+<section id="content" class="wrap" role="main">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -22,38 +22,40 @@ get_header(); ?>
 		</header>
 		
 		<section class="wrap blocFeat">
-			<div class="bloc--50 blocFeat__cntnt">
-				<h1 class="hdln hdln--feat"><?php the_field('prd_over_hdln'); ?></h1>
-				<h2 class="hdln hdln--featSub"><?php the_field('prd_over_hdln_sub'); ?></h2>
-				<p class="txt txt--feat"><?php the_field('prd_over_txt'); ?></p>
-				<a href="##" class="btn" id="overMoreBtn">Learn More</a>
-			</div>
-			<div class="bloc--50 blocFeat__img">
-				<?php $image = get_field('prd_over_img');
-					if( !empty($image) ): ?>
-					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-				<?php endif; ?>
-			</div>
-			<div id="overMore">
-				<div class="bloc--100 blocFeat__more">
-					<?php the_field('prd_over_txt_more'); ?>
+				<div class="bloc--50 blocFeat__cntnt">
+					<h1 class="hdln hdln--feat"><?php the_field('prd_over_hdln'); ?></h1>
+					<h2 class="hdln hdln--featSub"><?php the_field('prd_over_hdln_sub'); ?></h2>
+					<p class="txt txt--feat"><?php the_field('prd_over_txt'); ?></p>
+					<a href="##" class="btn" id="overMoreBtn">Learn More</a>
 				</div>
-			</div>
+				<div class="bloc--50 blocFeat__img">
+					<?php $image = get_field('prd_over_img');
+						if( !empty($image) ): ?>
+						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+					<?php endif; ?>
+				</div>
+				<div id="overMore">
+					<div class="bloc--100 blocFeat__more">
+						<?php the_field('prd_over_txt_more'); ?>
+					</div>
+				</div>
 		</section> <!-- END .blocFeat -->
 		
-		<section class="wrap blocUsps">
-			<?php if( have_rows('prd_usps') ): ?>
-			<?php while( have_rows('prd_usps') ): the_row(); 
-				// vars
-				$title = get_sub_field('prd_usp_title');
-				$txt = get_sub_field('prd_usp_txt');
-			?>
-			<div class="bloc bloc--50 bloc__singleUsp">
-				<h1 class="hdln hdnl--usp"><?php echo $title; ?></h1>
-				<p class="txt txt--usp"><?php echo $txt; ?></p>
-			</div>
-			<?php endwhile; ?>
-			<?php endif; ?>
+		<section class="blocUsps">
+			<div class="wrap blocUsps__wrap">
+				<?php if( have_rows('prd_usps') ): ?>
+				<?php while( have_rows('prd_usps') ): the_row(); 
+					// vars
+					$title = get_sub_field('prd_usp_title');
+					$txt = get_sub_field('prd_usp_txt');
+				?>
+				<div class="bloc bloc--50 bloc__singleUsp">
+					<h1 class="hdln hdnl--usp"><?php echo $title; ?></h1>
+					<p class="txt txt--usp"><?php echo $txt; ?></p>
+				</div>
+				<?php endwhile; ?>
+				<?php endif; ?>
+			</div> <!-- END .blocUsps__wrap -->
 		</section> <!-- END .blocUsps -->
 		
 		<section class="wrap blocGall">
@@ -75,10 +77,10 @@ get_header(); ?>
 		
 		<section class="wrap blocCta">
 			<a href="###" class="btn btn--prd">Download Brochure PDF</a>
-			<a href="###" class="btn btn--prd btn--dark">Contact Us About This Mixer</a>
+			<a href="<?php the_field('prd_bro_link'); ?>" class="btn btn--prd btn--dark">Contact Us About This Mixer</a>
 		</section> <!-- END .blocCta -->
 		
-		<section class="wrap blocSpecs">
+<!--<section class="wrap blocSpecs">
 			<h1 class="hdln hdln--specs" >Specifications</h1>
 			<?php if( have_rows('specs') ): ?>
 			<div class="bloc bloc__specs">
@@ -96,7 +98,7 @@ get_header(); ?>
 				</table>
 			</div>
 			<?php endif; ?>
-		</section> <!-- END .blocSpecs -->
+		</section>  END .blocSpecs -->
 			
 	</article>
 
