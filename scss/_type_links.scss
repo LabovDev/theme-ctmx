@@ -126,6 +126,7 @@ span.hdln--heroBig {
 	font: normal normal 200%/1 $fnt-3;
 	margin-top: $space;
 	text-align: center;
+	text-shadow: $txt-drop;
 	@include trans(all, 0.3s, ease);
 	@media all and (min-width:$bp-1) {
 		font-size: 275%; 
@@ -218,12 +219,15 @@ span.hdln--heroBig {
 
 .txt--prdHero {
 	font-size: 100%; 
+	margin: 0 auto;
+	max-width: 900px;
 	text-align: center;
 }
 
 .blocFeat__cntnt p,
 .blocFeat__more p,
-.blocAbt__more p {
+.blocAbt__more p,
+.bloc__gen p {
 	font-size: 3.5vw;
 	margin-bottom: $space;
 	@include trans(all, 0.3s, ease);
@@ -250,6 +254,34 @@ span.hdln--heroBig {
 	}
 	@media all and (min-width:$bp-5) {
 		font-size: 90%;
+	}
+}
+
+.bloc__gen {
+	h3 {
+		font: normal normal 140%/1 $fnt-2;
+		margin: $space-2x 0 $space-half 0;
+		@include trans(all, 0.3s, ease);
+		@media all and (min-width:$bp-3) {
+			font-size: 140%;
+		}
+	}
+	h5 {
+		font-size: 140%;
+		line-height: 1;
+		@include trans(all, 0.3s, ease);
+		@media all and (min-width:$bp-3) {
+			font-size: 110%;
+		}
+	}
+	h6 {
+		font-size: 90%;
+		line-height: 1;
+		margin-bottom: $space;
+		@include trans(all, 0.3s, ease);
+		@media all and (min-width:$bp-3) {
+			font-size: 70%;
+		}
 	}
 }
 
@@ -325,6 +357,11 @@ p.txt--abtLead {
 	line-height: 1.6;
 }
 
+.item--mixer {
+	text-align: left;
+	margin-bottom: $space-half;
+}
+
 .item--ftrLink {
 	color: $w;
 	float: left;
@@ -341,7 +378,7 @@ p.txt--abtLead {
 	&:last-child {
 		border-top: 1px solid $gr-1;
 		font-size: 150%; 
-		margin-top: $space-half;
+		margin: $space-half 0 0 0;
 		padding-top: $space-half;
 		width: 100%;
 		text-align: center;
@@ -420,6 +457,12 @@ p.txt--abtLead {
 	color: $gr-2;
 }
 
+.bloc__gen a {
+	color: $cl-1;
+	font-weight: 700;
+	&:hover { color: $cl-2; }
+}
+
 //*  BUTTONS
 //*===========================================
 
@@ -465,6 +508,14 @@ p.txt--abtLead {
     border: 2px solid $cl-2;
     color: $w;
   }
+}
+
+.btn--mxr {
+	color: $w !important;
+	text-align: left;
+	padding: $space;
+	margin: 0;
+	width: 100%;
 }
 
 .btn--prd {

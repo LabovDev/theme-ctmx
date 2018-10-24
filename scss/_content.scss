@@ -178,29 +178,6 @@ img {
 	}
 }
 
-.blocAbt--full { 
-	padding: $space-and-half $space $space-half $space;
-	margin-bottom: 0; 
-	@include trans(all, 0.3s, ease);
-	@media all and (min-width:$bp-3) {
-		padding: $space-and-half $space 0 $space;
-	}
-}
-
-.blocAbt__img {
-	padding: 0;
-}
-
-.blocAbt__cntnt {
-	padding: 0 $space $space $space;
-	@include trans(all, 0.3s, ease);
-	@media all and (min-width:$bp-3) {
-		padding: $space-and-half;
-		max-width: 900px;
-		margin: 0 auto;
-	}
-}
-
 #featMore-01, 
 #featMore-02,
 #featMore-03,
@@ -226,12 +203,43 @@ img {
 	max-width: 900px;
 }
 
+//*  GENERAL PAGES
+//*===========================================
+
+.hero--gen {
+		@include flx-p(
+		row,
+		wrap,
+		center,
+		center,
+		center
+	)
+	overflow: hidden;
+	margin: 0 auto;
+	height: 30.7017544vw;
+	position: relative;
+	max-height: 600px;
+	z-index: 500;
+}
+
+.wrap--gen {
+	max-width: 900px;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		margin: $space-2x auto $space auto;
+	}
+}
+
+.bloc__gen {
+	padding: $space;
+}
+
 //*  PRODUCT PAGES
 //*===========================================
 
 .fixHeight {
 	position: relative;
-	padding-bottom: 49.8571429%;
+	padding-bottom: 41.6666667%;
 	overflow: hidden;
 	max-width: 100%;
 	height: auto;
@@ -245,7 +253,7 @@ img {
 }
 
 .heroContent {
-	background-color: $gr-5;
+	background-color: #EAEAEA;
 	padding: $space;
 }
 
@@ -350,4 +358,27 @@ img {
 	)
 	height: 60vh;
 	padding-bottom: $space;
+}
+
+.blocAbt--full { 
+	padding: $space-and-half $space $space-half $space;
+	margin-bottom: 0; 
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		padding: $space-and-half $space 0 $space;
+	}
+}
+
+.blocAbt__img {
+	padding: 0;
+}
+
+.blocAbt__cntnt {
+	padding: 0 $space $space $space;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		padding: $space-and-half;
+		max-width: 900px;
+		margin: 0 auto;
+	}
 }

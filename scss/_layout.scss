@@ -27,6 +27,8 @@ html, body {
   width: 100%;
 }
 
+article { width: 100%; }
+
 .wrap {
 	@include flx-p(
 		column,
@@ -64,6 +66,14 @@ html, body {
 	@media all and (min-width:$bp-3) {
 		padding: $space;
 		width: 50%;
+	}
+}
+
+.bloc--66 {
+	width: 100%;
+	@include trans(all,0.3s,ease);
+	@media all and (min-width:$bp-3) {
+		width: 66.666666%;
 	}
 }
 

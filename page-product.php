@@ -27,6 +27,11 @@ get_header(); ?>
 					<h2 class="hdln hdln--featSub"><?php the_field('prd_over_hdln_sub'); ?></h2>
 					<p class="txt txt--feat"><?php the_field('prd_over_txt'); ?></p>
 					<a href="##" class="btn" id="overMoreBtn">Learn More</a>
+					<div id="overMore">
+						<div class="bloc--100 blocFeat__more">
+							<?php the_field('prd_over_txt_more'); ?>
+						</div>
+					</div>
 				</div>
 				<div class="bloc--50 blocFeat__img">
 					<?php $image = get_field('prd_over_img');
@@ -34,11 +39,7 @@ get_header(); ?>
 						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 					<?php endif; ?>
 				</div>
-				<div id="overMore">
-					<div class="bloc--100 blocFeat__more">
-						<?php the_field('prd_over_txt_more'); ?>
-					</div>
-				</div>
+
 		</section> <!-- END .blocFeat -->
 		
 		<section class="blocUsps">
@@ -76,8 +77,8 @@ get_header(); ?>
 		</section> <!-- END .blocGall -->
 		
 		<section class="wrap blocCta">
-			<a href="###" class="btn btn--prd">Download Brochure PDF</a>
-			<a href="<?php the_field('prd_bro_link'); ?>" class="btn btn--prd btn--dark">Contact Us About This Mixer</a>
+			<a href="<?php the_field('prd_bro_link'); ?>" class="btn btn--prd">Download Brochure PDF</a>
+			<a href="<?php bloginfo('url'); ?>/?page_id=16" class="btn btn--prd btn--dark">Contact Us About This Mixer</a>
 		</section> <!-- END .blocCta -->
 		
 <!--<section class="wrap blocSpecs">
