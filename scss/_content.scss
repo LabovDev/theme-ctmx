@@ -178,13 +178,11 @@ img {
 	}
 }
 
-#featMore-01, 
-#featMore-02,
-#featMore-03,
-#overMore,
-#abtMore-01,
-#abtMore-02,
-#abtMore-03 { 
+#featMore-01, #featMore-02,
+#featMore-03, #overMore,
+#abtMore-01, #abtMore-02,
+#abtMore-03, #csthMore-01,
+#csthMore-02 { 
 	display:none;
 	min-width: 100%;
 
@@ -207,7 +205,7 @@ img {
 //*===========================================
 
 .hero--gen {
-		@include flx-p(
+	@include flx-p(
 		row,
 		wrap,
 		center,
@@ -352,12 +350,24 @@ img {
 	@include flx-p(
 		column,
 		nowrap,
-		flex-end,
+		center,
 		center,
 		center
 	)
-	height: 60vh;
-	padding-bottom: $space;
+	max-height: 600px;
+	height: 52.6315789vw;
+	div {
+		@include flx-p(
+			column,
+			nowrap,
+			space-evenly,
+			center,
+			center
+		)
+		height: 52.6315789vw;
+		max-height: 600px;
+		padding: $space-2x $space-2x $space-3x $space-2x;
+	}
 }
 
 .blocAbt--full { 

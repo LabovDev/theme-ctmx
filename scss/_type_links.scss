@@ -61,6 +61,13 @@ h6 { font-size: 100%; }
 	}
 }
 
+.hero--about div .hdln--hero {
+	@media all and (min-width:$bp-4) {
+		font-size: 80px;
+		max-width: 1000px;
+	}
+} 
+
 span.hdln--heroBig {
 	font-size: 100%;
 	@include trans(all, 0.3s, ease);

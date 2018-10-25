@@ -9,10 +9,12 @@ get_header(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 		<header>
-			<div class="bloc hero hero--about" style="background: url('<?php the_field('abt_hero_img'); ?>') top center/cover no-repeat;">
-				<h1 class="hdln hdln hdln--prdName"><?php the_field('abt_hdln'); ?></h1>
-					<h2 class="hdln hdln--featSub"><?php the_field('abt_hdlnSub'); ?></h2>
+			<div class="bloc hero hero--about fixHeight" style="background: url('<?php the_field('abt_hero_img'); ?>') top center/cover no-repeat;">
+				<div>
+					<h1 class="hdln hdln--hero"><?php the_field('abt_hdln'); ?></h1>
+					<h2 class="hdln hdln--heroSub"><?php the_field('abt_hdlnSub'); ?></h2>
 					<p class="txt txt--hero"><?php the_field('abt_hero_txt'); ?></p>
+				</div>
 			</div> <!-- END .hero -->
 		</header>
 
@@ -26,11 +28,11 @@ get_header(); ?>
 			<div class="bloc--50 blocFeat__cntnt">
 				<h1 class="hdln hdln--feat"><?php the_field('abt_pnlhead_01'); ?></h1>
 				<h2 class="hdln hdln--featSub"><?php the_field('abt_pnlsub_head_01'); ?></h2>					
-				<p><?php the_field('abt_pnltxt_01'); ?></p>
+				<?php the_field('abt_pnltxt_01'); ?>
 				<a href="##" class="btn btn--dark" id="abt1">More</a>
 				<div id="abtMore-01">
 					<div class="bloc blocFeat__more">
-						<p><?php the_field('abt_pnltxt_01_more'); ?></p>
+						<?php the_field('abt_pnltxt_01_more'); ?>
 					</div>
 				</div>		
 			</div>
@@ -54,11 +56,11 @@ get_header(); ?>
 			<div class="bloc blocAbt__cntnt">
 				<h1 class="hdln hdln--feat hdln--featFull"><?php the_field('abt_pnlhead_02'); ?></h1>
 				<h2 class="hdln hdln--featSub hdln--featSubFull"><?php the_field('abt_pnlsub_head_02'); ?></h2>
-				<p class="txt txt--feat txt--featFull"><?php the_field('abt_pnltxt_02'); ?></p>
+				<?php the_field('abt_pnltxt_02'); ?>
 				<a href="##" class="btn btn--dark" id="abt2">More</a>					
 				<div id="abtMore-02">
 					<div class="bloc blocAbt__more">
-						<p><?php the_field('abt_pnltxt_02_more'); ?></p>
+						<?php the_field('abt_pnltxt_02_more'); ?>
 					</div>
 				</div>	
 			</div>
@@ -68,11 +70,11 @@ get_header(); ?>
 			<div class="bloc--50 blocFeat__cntnt">
 				<h1 class="hdln hdln--feat"><?php the_field('abt_pnlhead_03'); ?></h1>
 				<h2 class="hdln hdln--featSub"><?php the_field('abt_pnlsub_head_03'); ?></h2>					
-				<p><?php the_field('abt_pnltxt_03'); ?></p>
+				<?php the_field('abt_pnltxt_03'); ?>
 				<a href="##" class="btn btn--dark" id="abt3">More</a>
 				<div id="abtMore-03">
 					<div class="bloc blocAbt__more">
-						<p><?php the_field('abt_pnltxt_03_more'); ?></p>
+						<?php the_field('abt_pnltxt_03_more'); ?>
 					</div>
 				</div>	
 			</div>
