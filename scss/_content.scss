@@ -3,6 +3,10 @@
 
 #container {
 	margin-top: 60px;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-6) {
+		margin-top: 100px;
+	}
 }
 
 // .sct[pageAbbrev]__xxx {} 
@@ -190,16 +194,16 @@ img {
 }
 
 .blocFeat__more {
-	padding-top: $space;
+	padding-bottom: $space;
 	margin: 0 auto;
 	max-width: 900px;
 }
 
-.blocAbt__more {
-	margin: 0 auto $space-2x auto;
-	padding: $space $space 0 $space;
-	max-width: 900px;
-}
+// .blocAbt__more {
+// 	margin: 0 auto $space-2x auto;
+// 	padding: $space $space 0 $space;
+// 	max-width: 900px;
+// }
 
 //*  GENERAL PAGES
 //*===========================================

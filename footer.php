@@ -7,7 +7,7 @@
 						<li class="item item--ftrLink"><a class="link link--ftr" href="/?page_id=24">Thoroughbred</a></li>
 						<li class="item item--ftrLink"><a class="link link--ftr" href="/?page_id=26">Twin Steer</a></li>
 						<li class="item item--ftrLink"><a class="link link--ftr" href="/?page_id=28">Trailer Mixers</a></li>
-						<li class="item item--ftrLink"><a class="link link--ftr" href="/?page_id=###">Other Mixers</a></li>
+						<li class="item item--ftrLink"><a class="link link--ftr" href="/?page_id=###">Other&nbsp;Mixers</a></li>
 						<li class="item item--ftrLink"><a class="link link--ftr" href="/?page_id=14">Parts &amp; Service</a></li>
 						<li class="item item--ftrLink"><a class="link link--ftr" href="/?page_id=16">Contact</a></li>
 						<li class="item item--ftrLink item--ftrNum">800-231-6496</li>

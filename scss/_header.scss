@@ -17,6 +17,10 @@
 		center,
 		space-between
 	)
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-6) {
+		height: 100px;
+	}
 }
 
 #branding {
@@ -28,6 +32,10 @@
 	  width: auto;
 	  margin-top: 2px;
 	  max-height: 40px;
+	  @include trans(all, 0.3s, ease);
+  	@media all and (min-width:$bp-6) {
+  		max-height: 70px;
+  	}
   }
 }
 

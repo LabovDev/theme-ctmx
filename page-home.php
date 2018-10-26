@@ -27,12 +27,13 @@ get_header(); ?>
 					<h1 class="hdln hdln--feat"><?php the_field('feat_head_01'); ?></h1>
 					<h2 class="hdln hdln--featSub"><?php the_field('feat_sub_head_01'); ?></h2>
 					<?php the_field('feat_txt_01'); ?>
-					<a href="##" class="btn btn--dark" id="feat1">Learn More</a>
 					<div id="featMore-01">
 						<div class="bloc--100 blocFeat__more">
 							<?php the_field('feat_txt_01_more'); ?>
 						</div>
-					</div>	
+					</div>
+					<button class="btn btn--dark" id="feat1">Learn More</button>
+	
 				</div>
 				<div class="bloc--50 blocFeat__img">
 					<?php 
@@ -56,12 +57,13 @@ get_header(); ?>
 					<h1 class="hdln hdln--feat"><?php the_field('feat_head_02'); ?></h1>
 					<h2 class="hdln hdln--featSub"><?php the_field('feat_sub_head_02'); ?></h2>
 					<?php the_field('feat_txt_03'); ?>
-					<a href="##" class="btn btn--dark" id="feat2">Learn More</a>
 					<div id="featMore-02">
 						<div class="bloc--100 blocFeat__more">
 							<?php the_field('feat_txt_02_more'); ?>
 						</div>
-					</div>	
+					</div>
+					<button class="btn btn--dark" id="feat2">Learn More</button>
+	
 				</div>				
 			</section> <!-- END .blocFeatSplit -->
 			
@@ -77,12 +79,12 @@ get_header(); ?>
 					<h1 class="hdln hdln--feat  hdln--featFull"><?php the_field('feat_head_03'); ?></h1>
 					<h2 class="hdln hdln--featSub hdln--featSubFull"><?php the_field('feat_sub_head_03'); ?></h2>
 					<p class="txt txt--feat txt--featFull"><?php the_field('feat_txt_03'); ?></p>
-					<a href="##" class="btn btn--dark" id="feat3">Learn More</a>
 					<div id="featMore-03">
 						<div class="bloc--100 blocFeat__more">
 							<?php the_field('feat_txt_03_more'); ?>
 						</div>
-					</div>				
+					</div>	
+					<button class="btn btn--dark" id="feat3">Learn More</button>			
 				</div>
 			</section>
 			
