@@ -46,6 +46,7 @@ img {
 }
 
 .metaslider {
+	max-height: 600px;
 	.caption-wrap { 
 		background-color: transparent !important; 
 		bottom: auto !important;
@@ -86,6 +87,7 @@ img {
 
 .heroNav__sctn {
 	background-color: $cl-1;
+	border-top: 1px solid $w;
 	min-height: 76px;
 	@include flx-p(
 		column,
@@ -103,11 +105,15 @@ img {
 	}
 	@media all and (min-width:$bp-3) {
 		min-height: 200px;
+		&:nth-child(even) {
+			border-left: 1px solid $w;
+		}
 	}
 }
 
 .heroNav__sctn--01 {
 	background: url('../img/hero_link_01.jpg') center center/cover no-repeat;
+
 }
 .heroNav__sctn--02 {
 	background: url('../img/hero_link_02.jpg') center center/cover no-repeat;
@@ -127,10 +133,10 @@ img {
 	width: 100%;
 	@include trans(all, 0.3s, ease);
 	@media all and (min-width:$bp-3) {
-		padding: $space-and-half 0;
+		padding: $space-and-half $space;
 	}
 	@media all and (min-width:$bp-6) {
-		padding: $space-2x 0;
+		padding: $space-2x $space;
 	}
 }
 
@@ -144,7 +150,7 @@ img {
 	}
 	@include trans(all, 0.3s, ease);
 	@media all and (min-width:$bp-6) {
-		padding: $space-2x;
+		padding: $space-2x $space;
 	}
 }
 
@@ -165,6 +171,12 @@ img {
 	@include trans(all, 0.3s, ease);
 	@media all and (min-width:$bp-3) {
 		margin-bottom: 0; 
+	}
+}
+
+.padRight {
+	@media all and (min-width:$bp-3) {
+		padding: 0 $space 0 0 !important;
 	}
 }
 
@@ -212,9 +224,9 @@ img {
 	@include flx-p(
 		row,
 		wrap,
-		center,
-		center,
-		center
+		flex-start,
+		flex-start,
+		flex-start
 	)
 	overflow: hidden;
 	margin: 0 auto;
@@ -276,7 +288,7 @@ img {
 }
 
 .blocGall {
-	padding: $space-2x;
+	padding: $space-2x $space 0 $space-2x;
 }
 
 .blocGall__list {
@@ -307,11 +319,9 @@ img {
 }
 
 .blocCta {
-	border-top: 1px solid $gr-4;
-	// border-bottom: 1px solid $gr-4;
-	padding: $space-2x;
-	margin: $space;
-	width: calc(100% - 2em);
+	padding: 0 $space-2x;
+	margin: 0 auto $space-2x auto;
+	width: calc(100% - 4em);
 	@include trans(all, 0.3s, ease);
 	@media all and (min-width:$bp-3) {
 		justify-content: center;
@@ -375,12 +385,8 @@ img {
 }
 
 .blocAbt--full { 
-	padding: $space-and-half $space $space-half $space;
+	padding: $space-and-half $space;
 	margin-bottom: 0; 
-	@include trans(all, 0.3s, ease);
-	@media all and (min-width:$bp-3) {
-		padding: $space-and-half $space 0 $space;
-	}
 }
 
 .blocAbt__img {
@@ -395,4 +401,13 @@ img {
 		max-width: 900px;
 		margin: 0 auto;
 	}
+}
+
+//*  HIDE IT
+//*===========================================
+
+button[data-attr='hide'] {
+	display: none;
+	height: 0;
+	width: 0; 
 }

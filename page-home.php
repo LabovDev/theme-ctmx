@@ -23,7 +23,7 @@ get_header(); ?>
 			</section> <!-- END .heroNav -->
 			
 			<section class="wrap blocFeat">
-				<div class="bloc--50 blocFeat__cntnt">
+				<div class="bloc--50 blocFeat__cntnt padRight">
 					<h1 class="hdln hdln--feat"><?php the_field('feat_head_01'); ?></h1>
 					<h2 class="hdln hdln--featSub"><?php the_field('feat_sub_head_01'); ?></h2>
 					<?php the_field('feat_txt_01'); ?>

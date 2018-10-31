@@ -35,12 +35,18 @@ h4 { font-size: 100%; }
 h5 { font-size: 100%; }
 h6 { font-size: 100%; }
 
+h2:empty { display: none; }
+
 //*  HEADLINES
 //*===========================================
 
 .hdln {
 	color: $k;
 	font-family: $fnt-2;
+}
+
+.hero--gen .hdln--hero {
+	margin: $space 0 0 0 !important;
 }
 
 .hdln--hero {
@@ -62,10 +68,7 @@ h6 { font-size: 100%; }
 }
 
 .hero--about div .hdln--hero {
-	@media all and (min-width:$bp-4) {
-		font-size: 80px;
-		max-width: 1000px;
-	}
+	max-width: 1000px;
 } 
 
 span.hdln--heroBig {
@@ -89,6 +92,7 @@ span.hdln--heroBig {
 	@include trans(all, 0.3s, ease);
 	@media all and (min-width:$bp-3) {
 		font-size: 2.5vw;
+		margin-bottom: $space;
 	}
 	@media all and (min-width:$bp-4) {
 		font-size: 120%;
@@ -99,10 +103,6 @@ span.hdln--heroBig {
 	font-size: 140%;
 	line-height: 1;
 	margin-bottom: $space-half;
-	@include trans(all, 0.3s, ease);
-	@media all and (min-width:$bp-3) {
-		font-size: 120%;
-	}
 }
 
 .hdln--featFull {
@@ -115,17 +115,13 @@ span.hdln--heroBig {
 	font-size: 80%;
 	margin-bottom: $space;
 	padding: $space-half;
-	@include trans(all, 0.3s, ease);
-	@media all and (min-width:$bp-3) {
-		font-size: 70%;
-	} 
 }
 
 .hdln--featSubFull {
 	display: table;
 	text-align: center;
 	padding: $space-half $space-2x;
-	margin: 0 auto;
+	margin: 0 auto $space auto;
 }
 
 .hdln--prdName {
@@ -225,7 +221,7 @@ span.hdln--heroBig {
 }
 
 .txt--prdHero {
-	font-size: 100%; 
+	font-size: 80%; 
 	margin: 0 auto;
 	max-width: 900px;
 	text-align: center;
@@ -318,16 +314,6 @@ p.txt--abtLead {
 	margin: 0 auto;
 	max-width: 700px;
 	text-align: center;
-}
-
-.txt--usp {
-	@include trans(all, 0.3s, ease);
-	@media all and (min-width:$bp-3) {
-		font-size: 80%;
-	}
-	@media all and (min-width:$bp-6) {
-		font-size: 70%;
-	}
 }
 
 .txt--galCap {
@@ -468,6 +454,21 @@ p.txt--abtLead {
 	color: $cl-1;
 	font-weight: 700;
 	&:hover { color: $cl-2; }
+}
+
+a.fancybox {
+	overflow: hidden;
+	display: block;
+	background-color: $cl-1;
+	img {
+		transform: scale(1);
+		opacity: 1;
+		@include trans(all, 0.3s, ease);
+		&:hover {
+			transform: scale(1.1);
+			opacity: .5;
+		}
+	}
 }
 
 //*  BUTTONS

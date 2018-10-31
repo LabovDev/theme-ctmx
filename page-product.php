@@ -22,23 +22,23 @@ get_header(); ?>
 		</header>
 		
 		<section class="wrap blocFeat">
-				<div class="bloc--50 blocFeat__cntnt">
-					<h1 class="hdln hdln--feat"><?php the_field('prd_over_hdln'); ?></h1>
-					<h2 class="hdln hdln--featSub"><?php the_field('prd_over_hdln_sub'); ?></h2>
-					<p class="txt txt--feat"><?php the_field('prd_over_txt'); ?></p>
-					<a href="##" class="btn" id="overMoreBtn">Learn More</a>
-					<div id="overMore">
-						<div class="bloc--100 blocFeat__more">
-							<?php the_field('prd_over_txt_more'); ?>
-						</div>
+			<div class="bloc--50 blocFeat__cntnt">
+				<h1 class="hdln hdln--feat"><?php the_field('prd_over_hdln'); ?></h1>
+				<h2 class="hdln hdln--featSub"><?php the_field('prd_over_hdln_sub'); ?></h2>
+				<p class="txt txt--feat"><?php the_field('prd_over_txt'); ?></p>
+				<div id="overMore">
+					<div class="bloc--100 blocFeat__more">
+						<?php the_field('prd_over_txt_more'); ?>
 					</div>
 				</div>
-				<div class="bloc--50 blocFeat__img">
-					<?php $image = get_field('prd_over_img');
-						if( !empty($image) ): ?>
-						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-					<?php endif; ?>
-				</div>
+				<button class="btn btn--dark" id="overMoreBtn" data-attr="<?php the_field('hide_more'); ?>" >Learn More</button>
+			</div>
+			<div class="bloc--50 blocFeat__img">
+				<?php $image = get_field('prd_over_img');
+					if( !empty($image) ): ?>
+					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+				<?php endif; ?>
+			</div>
 
 		</section> <!-- END .blocFeat -->
 		

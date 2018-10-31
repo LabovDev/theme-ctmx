@@ -2,14 +2,13 @@
 			<footer class="ftr" role="contentinfo">
 				<div class="ftr__links">
 					<ul>
-						<li class="item item--ftrLink"><a class="link link--ftr" href="/?page_id=20">Conventional Mixers</a></li>
-						<li class="item item--ftrLink"><a class="link link--ftr" href="/?page_id=22">BridgeSaver</a></li>
-						<li class="item item--ftrLink"><a class="link link--ftr" href="/?page_id=24">Thoroughbred</a></li>
-						<li class="item item--ftrLink"><a class="link link--ftr" href="/?page_id=26">Twin Steer</a></li>
-						<li class="item item--ftrLink"><a class="link link--ftr" href="/?page_id=28">Trailer Mixers</a></li>
-						<li class="item item--ftrLink"><a class="link link--ftr" href="/?page_id=###">Other&nbsp;Mixers</a></li>
-						<li class="item item--ftrLink"><a class="link link--ftr" href="/?page_id=14">Parts &amp; Service</a></li>
-						<li class="item item--ftrLink"><a class="link link--ftr" href="/?page_id=16">Contact</a></li>
+						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=20">Conventional Mixers</a></li>
+						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=22">BridgeSaver</a></li>
+						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=24">Thoroughbred</a></li>
+						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=26">Twin Steer</a></li>
+						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=30">Other&nbsp;Mixers</a></li>
+						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=14">Parts&nbsp;&amp;&nbsp;Service</a></li>
+						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=16">Contact</a></li>
 						<li class="item item--ftrLink item--ftrNum">800-231-6496</li>
 					</ul>
 				</div>

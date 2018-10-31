@@ -9,9 +9,9 @@ get_header(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 		<header>
-			<div class="bloc hero hero--about fixHeight" style="background: url('<?php the_field('abt_hero_img'); ?>') top center/cover no-repeat;">
+			<div class="bloc hero hero--about" style="background: url('<?php the_field('abt_hero_img'); ?>') top center/cover no-repeat;">
 				<div>
-					<h1 class="hdln hdln--hero"><?php the_field('abt_hdln'); ?></h1>
+					<h1 class="hdln hdln--hero">The Continental <span class="hdln--heroBig">Difference</span></h1>
 					<h2 class="hdln hdln--heroSub"><?php the_field('abt_hdlnSub'); ?></h2>
 					<p class="txt txt--hero"><?php the_field('abt_hero_txt'); ?></p>
 				</div>
@@ -24,8 +24,8 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="wrap blocFeat">
-			<div class="bloc--50 blocFeat__cntnt">
+		<section class="wrap blocFeat--alt">
+			<div class="bloc--50 blocFeat__cntnt padRight">
 				<h1 class="hdln hdln--feat"><?php the_field('abt_pnlhead_01'); ?></h1>
 				<h2 class="hdln hdln--featSub"><?php the_field('abt_pnlsub_head_01'); ?></h2>					
 				<?php the_field('abt_pnltxt_01'); ?>
@@ -67,18 +67,18 @@ get_header(); ?>
 		</section>
 
 		<section class="wrap blocFeat--alt">
-			<div class="bloc--50 blocFeat__cntnt">
+			<div class="bloc--50 blocFeat__cntnt padRight">
 				<h1 class="hdln hdln--feat"><?php the_field('abt_pnlhead_03'); ?></h1>
 				<h2 class="hdln hdln--featSub"><?php the_field('abt_pnlsub_head_03'); ?></h2>					
 				<?php the_field('abt_pnltxt_03'); ?>
-				<div id="abtMore-03">
+<!-- 				<div id="abtMore-03">
 					<div class="bloc blocAbt__more">
 						<?php the_field('abt_pnltxt_03_more'); ?>
 					</div>
 				</div>
-				<button class="btn btn--dark" id="abt3">More</button>
+				<button class="btn btn--dark" id="abt3">More</button> -->
 			</div>
-			<div class="bloc--50">
+			<div class="bloc--50 blocAbt__img">
 				<?php 
 					$image = get_field('abt_img_03');
 					if( !empty($image) ): ?>

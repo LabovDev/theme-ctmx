@@ -10,7 +10,7 @@ get_header(); ?>
 
 		<header>
 			<div class="bloc hero hero--gen" style="background: #ccc url('<?php the_field('gen_hero_img'); ?>') top center/cover no-repeat;">
-				<h1 class="hdln hdln hdln--hero"><span class="hdln--heroBig"><?php the_field('gen_hdln'); ?></span></h1>
+				<h1 class="hdln hdln--hero"><?php the_field('gen_hdln'); ?></h1>
 			</div> <!-- END .hero -->
 		</header>
 

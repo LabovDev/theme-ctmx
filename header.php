@@ -22,7 +22,7 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 		</nav>
 		<section id="branding">
-			<a href="/"><img src="<?php bloginfo('url'); ?>/wp-content/themes/theme-ctmx/img/continental-mixer-logo.png" alt="Continental Mixer"></a>
+			<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('url'); ?>/wp-content/themes/theme-ctmx/img/continental-mixer-logo.png" alt="Continental Mixer"></a>
 		</section>
 		<div class="csthLink">
 			<a href="<?php bloginfo('url'); ?>/?page_id=32"><img class="csthLink__img" src="<?php bloginfo('url'); ?>/wp-content/themes/theme-ctmx/img/csth_pgTrn.png" alt="CSTH Company"></a>
