@@ -11,7 +11,7 @@ get_header(); ?>
 		<header>
 			<div class="bloc hero hero--about" style="background: url('<?php the_field('abt_hero_img'); ?>') 30% center/cover no-repeat;">
 				<div>
-					<h1 class="hdln hdln--hero"><?php the_field('abt_hdln'); ?></h1>
+					<h1 class="hdln hdln--hero">We Are <span class="hdln--heroBig">CSTH</span></h1>
 					<h2 class="hdln hdln--heroSub"><?php the_field('abt_hdlnSub'); ?></h2>
 					<p class="txt txt--hero"><?php the_field('abt_hero_txt'); ?></p>
 				</div>
@@ -130,6 +130,11 @@ get_header(); ?>
 				<?php endif; ?>				
 			</div>			
 		</section> <!-- END .blocFeatSplit -->
+
+		<section class="wrap blocCta">
+			<a href="http://www.ezpacktrucks.com/" target="_blank" class="btn btn--prd btn--dark">Vist E-Z Pack Website</a>
+			<a href="https://www.onesourceparts.com/" target="_blank" class="btn btn--prd btn--dark">Vist One Source Parts Website</a>
+		</section> <!-- END .blocCta -->
 			
 		</div> <!-- END .wrap--mxw -->
 	</article>

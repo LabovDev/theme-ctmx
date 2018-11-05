@@ -6,6 +6,7 @@
 						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=22">BridgeSaver</a></li>
 						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=24">Thoroughbred</a></li>
 						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=26">Twin Steer</a></li>
+						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=162">Lightweight</a></li>
 						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=30">Other&nbsp;Mixers</a></li>
 						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=14">Parts&nbsp;&amp;&nbsp;Service</a></li>
 						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=16">Contact</a></li>

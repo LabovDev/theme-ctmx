@@ -51,10 +51,8 @@ h2:empty { display: none; }
 
 .hdln--hero {
 	color: $w;
-	font-family: $fnt-3;
-	font-size: 6vw;
+	font: normal normal 6vw/1 $fnt-3;
 	flex-grow: 1;
-	line-height: 1;
 	text-align: center;
 	text-shadow: $txt-drop;
 	margin: 0 auto $space-qrtr auto;
@@ -107,6 +105,17 @@ span.hdln--heroBig {
 
 .hdln--featFull {
 	text-align: center;
+}
+
+.hdln--featSec {
+	color: $gr-4;
+	margin: 0 auto $space-2x auto;
+	text-align: center;
+	font: 700 normal 100%/1 $fnt-1;
+	text-transform: uppercase;
+	border-bottom: 1px solid $gr-4;
+	padding-bottom: $space-half;
+	max-width: 900px;
 }
 
 .hdln--featSub {

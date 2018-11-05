@@ -85,7 +85,12 @@ get_header(); ?>
 						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 				<?php endif; ?>				
 			</div>			
+			<div class="wrap blocCta" style="margin-top: 3em; ">
+				<a href="<?php bloginfo('url'); ?>/?page_id=32" class="btn btn--prd btn--dark">Continental Mixers is a CSTH company</a>
+			</div> <!-- END .blocCta -->
 		</section> <!-- END .blocFeatSplit -->
+
+
 			
 		</div> <!-- END .wrap--mxw -->
 	</article>

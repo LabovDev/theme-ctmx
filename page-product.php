@@ -43,6 +43,7 @@ get_header(); ?>
 		</section> <!-- END .blocFeat -->
 		
 		<section class="blocUsps">
+			<h1 class="hdln hdln--featSec">Key Features</h1>
 			<div class="wrap blocUsps__wrap">
 				<?php if( have_rows('prd_usps') ): ?>
 				<?php while( have_rows('prd_usps') ): the_row(); 
@@ -51,7 +52,7 @@ get_header(); ?>
 					$txt = get_sub_field('prd_usp_txt');
 				?>
 				<div class="bloc bloc--50 bloc__singleUsp">
-					<h1 class="hdln hdnl--usp"><?php echo $title; ?></h1>
+					<h2 class="hdln hdnl--usp"><?php echo $title; ?></h2>
 					<p class="txt txt--usp"><?php echo $txt; ?></p>
 				</div>
 				<?php endwhile; ?>
