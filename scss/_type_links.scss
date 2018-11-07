@@ -499,7 +499,7 @@ a.fancybox {
   &:hover {
     background-color: $w;
     border: 2px solid $cl-2;
-    color: $cl-2;
+    color: $cl-2 !important;
     transform: scale(1.05);
   }
 }
@@ -518,12 +518,12 @@ a.fancybox {
 
 .btn--dark {
 	background-color: $cl-1;
-	color: $w;
+	color: $w !important;
 	@include trans(all, 0.3s, ease);
   &:hover {
     background-color: $cl-2;
     border: 2px solid $cl-2;
-    color: $w;
+    color: $w !important;
   }
 }
 

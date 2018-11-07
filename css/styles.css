@@ -1041,7 +1041,7 @@ a.fancybox {
   .btn:hover {
     background-color: #ffffff;
     border: 2px solid #115DDD;
-    color: #115DDD;
+    color: #115DDD !important;
     -webkit-transform: scale(1.05);
             transform: scale(1.05); }
 
@@ -1062,13 +1062,13 @@ a.fancybox {
 /* line 519, Users/jtuck/Sites/ctmx/wp-content/themes/theme-ctmx/scss/_type_links.scss */
 .btn--dark {
   background-color: #2955A0;
-  color: #ffffff;
+  color: #ffffff !important;
   transition: all 0.3s ease; }
   /* line 523, Users/jtuck/Sites/ctmx/wp-content/themes/theme-ctmx/scss/_type_links.scss */
   .btn--dark:hover {
     background-color: #115DDD;
     border: 2px solid #115DDD;
-    color: #ffffff; }
+    color: #ffffff !important; }
 
 /* line 530, Users/jtuck/Sites/ctmx/wp-content/themes/theme-ctmx/scss/_type_links.scss */
 .btn--mxr {
