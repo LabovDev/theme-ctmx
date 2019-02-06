@@ -2,7 +2,7 @@
 			<footer class="ftr" role="contentinfo">
 				<div class="ftr__links">
 					<ul>
-						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=20">Conventional Mixers</a></li>
+						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=20">Conventional</a></li>
 						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=22">BridgeSaver</a></li>
 						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=24">Thoroughbred</a></li>
 						<li class="item item--ftrLink"><a class="link link--ftr" href="<?php bloginfo('url'); ?>/?page_id=26">Twin Steer</a></li>

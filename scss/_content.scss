@@ -327,6 +327,16 @@ img {
 	}
 }
 
+.truckCta {
+	margin: 0 !important;
+	width: 100%;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		justify-content: center;
+		margin: 0 0 $space-2x 0 !important;
+	}
+}
+
 .blocSpecs {
 	padding: $space $space $space-4x $space;
 }

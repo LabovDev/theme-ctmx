@@ -11,6 +11,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('url'); ?>/wp-content/themes/theme-ctmx/js/doubletaptogo.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('url'); ?>/wp-content/themes/theme-ctmx/js/csth-scripts-min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63170690-8"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-63170690-8');
+	</script>
 </head>
 
 <body <?php body_class(); ?>>
